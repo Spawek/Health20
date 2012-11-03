@@ -10,7 +10,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="74dp"
-        android:text="I need advice" />
+        android:text="I need advice" 
+        android:onClick="iNeedAdviceClicked"/>
 
     <Button
         android:id="@+id/emergency"
@@ -19,6 +20,7 @@
         android:layout_below="@+id/needAdvice"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="134dp"
-        android:text="Emergency" />
+        android:text="Emergency" 
+        android:onClick="emergencyClicked"/>
 
 </RelativeLayout>
