@@ -11,21 +11,18 @@ public class DiagnosisActivity extends Activity {
 	
 	TextView titleTV;
 	TextView diagnosisTV;
-    
-	public DiagnosisActivity(String title, String[] diagnosis) {
-		titleTV = (TextView) findViewById(R.id.title);
-		diagnosisTV = (TextView) findViewById(R.id.question);
-		// TODO pierwszy akapit!
-		titleTV.setText(title);
-		diagnosisTV.setText(diagnosis[0]);
-		
-	}
 	
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diagnosis);
         getActionBar().setDisplayHomeAsUpEnabled(true);
+        
+		titleTV = (TextView) findViewById(R.id.title);
+		diagnosisTV = (TextView) findViewById(R.id.question);
+		// TODO pierwszy akapit!
+		titleTV.setText(savedInstanceState.getString("title"));
+		diagnosisTV.setText(savedInstanceState.getStringArray("diagnosis")[0]);
     }
 
     @Override

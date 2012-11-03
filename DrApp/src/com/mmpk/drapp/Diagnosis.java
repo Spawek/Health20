@@ -1,12 +1,10 @@
 package com.mmpk.drapp;
 
-import android.app.Activity;
-
 	public class Diagnosis implements IState{
 		Category category;
 		//to display
-		String title;
-		String [] paragraphs;
+		public String title;
+		public String [] paragraphs;
 		
 		public Diagnosis(Category _category, String _title, String [] _paragraphs)
 		{
@@ -21,11 +19,5 @@ import android.app.Activity;
 			paragraphs = _paragraphs;
 			category = _category;
 			title = category.title;
-		}
-		
-		
-		public Activity GetActivity()
-		{
-			return new DiagnosisActivity(title, paragraphs); //TODO: generate activity using this object data
 		}
 	}
