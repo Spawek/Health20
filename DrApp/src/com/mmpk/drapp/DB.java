@@ -10,11 +10,9 @@ public class DB {
 	
 	public static void CreateCategories()
 	{
-		DB.categories.put("XYZ", new CategoryXYZ()); //for every category
+		DB.categories.put("Cold and flu", new CategoryColdAndFlu());
+		DB.categories.put("Cough", new CategoryCough());
+		DB.categories.put("Throat problems", new CategoryThroatProblems());
 	}
-
-	
-
-	
 	
 }
