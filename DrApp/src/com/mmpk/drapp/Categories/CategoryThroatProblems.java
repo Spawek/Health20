@@ -3,7 +3,7 @@ import MainPackage.Category;
 import MainPackage.Diagnosis;
 import MainPackage.Question;
 
-public class CategoryCough extends Category {
+public class CategoryThroat extends Category {
 	public CategoryThroat() throws Exception
 	{
 		title = "Throat problems";

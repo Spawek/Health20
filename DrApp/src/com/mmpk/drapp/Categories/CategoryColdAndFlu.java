@@ -3,8 +3,8 @@ import MainPackage.Category;
 import MainPackage.Diagnosis;
 import MainPackage.Question;
 
-public class CategoryColdFlu extends Category {
-	public CategoryColdFlu() throws Exception
+public class CategoryColdAndFlu extends Category {
+	public CategoryColdAndFlu() throws Exception
 	{
 		title = "Cold and flu";
 
