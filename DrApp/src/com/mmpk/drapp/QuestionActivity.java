@@ -36,19 +36,19 @@ public class QuestionActivity extends Activity {
 		return true;
 	}
 
-	public void yesClicked(View v) {
-		Log.i("activity_question", "yes clicked")
-		answerController.postAnswer(IQuestionController.Answer.Yes);
+	public void yesClicked(View v) throws Exception {
+		Log.i("activity_question", "yes clicked");
+		Activity a = answerController.postAnswer(IQuestionController.Answer.Yes);
 	}
 
-	public void noClicked(View v) {
-		Log.i("activity_question", "no clicked")
-		answerController.postAnswer(IQuestionController.Answer.No);
+	public void noClicked(View v) throws Exception {
+		Log.i("activity_question", "no clicked");
+		Activity a = answerController.postAnswer(IQuestionController.Answer.No);
 	}
 
-	public void idkClicked(View v) {
-		Log.i("activity_question", "idk clicked")
-		answerController.postAnswer(IQuestionController.Answer.Idk);
+	public void idkClicked(View v) throws Exception {
+		Log.i("activity_question", "idk clicked");
+		Activity a = answerController.postAnswer(IQuestionController.Answer.Idk);
 	}
 
 }

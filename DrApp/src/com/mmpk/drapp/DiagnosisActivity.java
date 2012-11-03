@@ -12,12 +12,12 @@ public class DiagnosisActivity extends Activity {
 	TextView titleTV;
 	TextView diagnosisTV;
     
-	public DiagnosisActivity(String title, String diagnosis) {
+	public DiagnosisActivity(String title, String[] diagnosis) {
 		titleTV = (TextView) findViewById(R.id.title);
 		diagnosisTV = (TextView) findViewById(R.id.question);
-		
+		// TODO pierwszy akapit!
 		titleTV.setText(title);
-		diagnosisTV.setText(diagnosis);
+		diagnosisTV.setText(diagnosis[0]);
 		
 	}
 	

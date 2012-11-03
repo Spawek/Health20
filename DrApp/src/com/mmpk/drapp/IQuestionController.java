@@ -1,7 +1,9 @@
 package com.mmpk.drapp;
 
+import android.app.Activity;
+
 public interface IQuestionController {
 	enum Answer {Yes, No, Idk};
 	
-	void postAnswer(Answer a);
+	Activity postAnswer(Answer a) throws Exception;
 }
