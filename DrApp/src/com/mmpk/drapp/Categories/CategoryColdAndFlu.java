@@ -3,8 +3,8 @@ import MainPackage.Category;
 import MainPackage.Diagnosis;
 import MainPackage.Question;
 
-public class CategoryColdFlu extends Category {
-	public CategoryColdFlu() throws Exception
+public class CategoryColdAndFlu extends Category {
+	public CategoryColdAndFlu() throws Exception
 	{
 		title = "Cold and flu";
 
@@ -18,11 +18,8 @@ public class CategoryColdFlu extends Category {
 		q.add(new Question(this,"Do you have a runny and/or itchy nose, sneezing, and itchy eyes?"));
 		q.add(new Question(this,"Do you have sneezing, a sore throat, headache, congestion and a runny nose?"));
 		q.add(new Question(this,"Do you have swelling or pain around your eyes, cheeks, nose or forehead, a headache, a dry cough, and/or discharge from the nose?"));
-
-
-		d.add(new Diagnosis(this, new String[]{"For more information, please talk to your doctor. If you think your problem is serious, call your doctor right away."}));
 		
-		d.add(new Diagnosis(this, new String[]{"For more information, please talk to your doctor. If you think your problem is serious, call your doctor right away."}));\ 0 
+		d.add(new Diagnosis(this, new String[]{"For more information, please talk to your doctor. If you think your problem is serious, call your doctor right away."})); //0 
 		d.add(new Diagnosis(this, new String[]{"foo"})); // 1
 		d.add(new Diagnosis(this, new String[]{"You may have STREP THROAT, a bacterial infection.","See your doctor if the sore throat or fever lasts longer than 48 hours. He or she can do a test to find out if you have strep throat. If you do, your doctor may give you an antibiotic to treat it. You should also get plenty of rest, and drink lots of water. Gargling with warm salt water may help relieve a sore throat."})); // 2
 		d.add(new Diagnosis(this, new String[]{"You may have the FLU.","Get plenty of rest, and drink lots of fluids. Over-the-counter medicines may relieve some of your symptoms. Your doctor may suggest a prescription medicine that may shorten the course of the flu. Prevent the flu by getting a flu shot each fall."})); // 3

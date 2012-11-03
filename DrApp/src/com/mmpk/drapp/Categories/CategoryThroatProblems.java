@@ -3,8 +3,8 @@ import MainPackage.Category;
 import MainPackage.Diagnosis;
 import MainPackage.Question;
 
-public class CategoryCough extends Category {
-	public CategoryThroat() throws Exception
+public class CategoryThroatProblems extends Category {
+	public CategoryThroatProblems() throws Exception
 	{
 		title = "Throat problems";
 		q.add(new Question(this, "fake")); //0
@@ -18,9 +18,7 @@ public class CategoryCough extends Category {
 		q.add(new Question(this,"Is the skin in your mouth peeling, and are your tongue and gums swollen and red?"));
 		q.add(new Question(this,"Do you have white patches and redness on your tongue or on the sides or back of your mouth?"));
 		
-		d.add(new Diagnosis(this, new String[]{"For more information, please talk to your doctor. If you think your problem is serious, call your doctor right away."}));
-		
-		d.add(new Diagnosis(this, new String[]{"For more information, please talk to your doctor. If you think your problem is serious, call your doctor right away."}));\ 0 
+		d.add(new Diagnosis(this, new String[]{"For more information, please talk to your doctor. If you think your problem is serious, call your doctor right away."}));// 0 
 		d.add(new Diagnosis(this, new String[]{"foo"})); // 1
 		d.add(new Diagnosis(this, new String[]{"You probably have a COLD or FLU.","Drink plenty of fluids and get plenty of rest. Children should be given nonaspirin medicine for the fever. If the cold lasts longer than two to three days, see your doctor."})); // 2
 		d.add(new Diagnosis(this, new String[]{"You may have viral GASTROENTERITIS, also called STOMACH FLU.", "Drink plenty of fluids and get plenty of rest. Use an antinausea and/or antidiarrheal medicine. See your doctor if symptoms get worse, if they last longer than a week, or if you become dehydrated."})); // 3
