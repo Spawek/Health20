@@ -15,6 +15,8 @@ public class DB {
 		DB.categories.put("Cough", new CategoryCough()); // for every category
 		DB.categories.put("Sore throat", new CategoryThroatProblems());
 		DB.categories.put("Cold and flu", new CategoryColdAndFlu());
+		DB.categories.put("Leg problems", new CategoryLegProblems());
+		DB.categories.put("Neck pain", new CategoryNeckPain());
 	}
 
 	static {

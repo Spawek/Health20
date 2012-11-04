@@ -24,11 +24,11 @@ public class CategoryChoiceActivity extends Activity {
 	final static String[][] names_db = new String[][] {
 			new String[] { "Empty category!" },
 			new String[] { "Cough", "Sore throat" },
+			new String[] { "Cold and flu" },
 			new String[] { "Empty category" },
 			new String[] { "Empty category" },
-			new String[] { "Empty category" },
-			new String[] { "Empty category" },
-			new String[] { "Empty category" },
+			new String[] { "Leg problems" },
+			new String[] { "Neck pain" },
 			new String[] { "Empty category" },
 
 	};
