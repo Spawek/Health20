@@ -37,7 +37,7 @@ public class CategoryChoiceActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_category_choice);
-
+		setTitle("What is the problem?");
 		lv = (ListView) findViewById(R.id.listView1);
 
 		catId = getIntent().getIntExtra("category", 0);

@@ -21,6 +21,8 @@ public class DiagnosisActivity extends Activity {
         setContentView(R.layout.activity_diagnosis);
         getActionBar().setDisplayHomeAsUpEnabled(true);
         
+        setTitle("Diagnosis");
+        
         Intent i = getIntent();
         
 		titleTV = (TextView) findViewById(R.id.title);

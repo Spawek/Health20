@@ -40,6 +40,12 @@
             android:layout_height="wrap_content"
             android:text="Find a Doctor" />
 
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/Facebooklogopic" />
+
     </LinearLayout>
 
     <Button

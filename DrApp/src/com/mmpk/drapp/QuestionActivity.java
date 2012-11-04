@@ -26,6 +26,8 @@ public class QuestionActivity extends Activity {
 		titleTV = (TextView) findViewById(R.id.title);
 		questionTV = (TextView) findViewById(R.id.question);
 		
+		setTitle(i.getStringExtra("title"));
+		
 		titleTV.setText(i.getStringExtra("title"));
 		questionTV.setText(i.getStringExtra("question"));
 		
