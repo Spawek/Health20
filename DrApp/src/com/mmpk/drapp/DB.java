@@ -11,7 +11,6 @@ public class DB {
 	public IState state;
 
 	public static void CreateCategories() throws Exception {
-		DB.categories.put("XYZ", new CategoryXYZ()); // for every category
 		DB.categories.put("Cough", new CategoryCough()); // for every category
 	}
 

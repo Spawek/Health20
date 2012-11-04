@@ -23,20 +23,20 @@ public class CategoryCough extends Category {
 		q.add(new Question(title, "Have you unintentionally lost weight?")); //11
 		q.add(new Question(title, "Did you inhale dust, particles or an object?")); //12
 		
-		d.add(new Diagnosis(this, new String[]{"For more information, please talk to your doctor.", "If you think your problem is serious, call your doctor right away."}));
+		d.add(new Diagnosis(title, new String[]{"For more information, please talk to your doctor.", "If you think your problem is serious, call your doctor right away."}));
 		
-		d.add(new Diagnosis(this, new String[]{"foo"})); // 1
-		d.add(new Diagnosis(this, new String[]{"Your symptoms may be from a serious condition called PULMONARY EDEMA (fluid in the lungs).","EMERGENCY! GO TO THE NEAREST EMERGENCY ROOM RIGHT AWAY."})); // 2
-		d.add(new Diagnosis(this, new String[]{"You may have a viral illness such as a COLD or the FLU.","Get plenty of rest, and drink lots of fluids. Try over-the-counter medicines to treat your symptoms."})); // 3
-		d.add(new Diagnosis(this, new String[]{"You may have an infection of the airways such as CHRONIC BRONCHITIS. If you have a fever with shaking chills and are very ill, you may have a more serious infection such as PNEUMONIA.", "See your doctor. He or she can prescribe medicine to relieve your symptoms. Get plenty of rest, and drink lots of fluids. If you smoke, stop smoking."})); // 4
-		d.add(new Diagnosis(this, new String[]{"These symptoms may be a sign of ASTHMA, a constriction of the airways.","Asthma can be dangerous and should be diagnosed and treated by your doctor."})); // 5
-		d.add(new Diagnosis(this, new String[]{"foo"})); // 6
-		d.add(new Diagnosis(this, new String[]{"Persistent coughing can be caused by CONGESTIVE HEART FAILURE, especially when there is a buildup of fluid in the lungs.","See your doctor."})); // 7
-		d.add(new Diagnosis(this, new String[]{"foo"})); // 8
-		d.add(new Diagnosis(this, new String[]{"Bloody mucus with these symptoms may mean that a blood clot has moved from your leg to your lungs. This is called PULMONARY EMBOLISM."})); // 9
-		d.add(new Diagnosis(this, new String[]{"These symptoms may be caused by TUBERCULOSIS or another type of infection.","See your doctor."})); // 10
-		d.add(new Diagnosis(this, new String[]{"This may be a sign of a serious illness, such as LUNG CANCER. Other signs of lung cancer may include a cough that produces bloody sputum, shortness of breath and wheezing.","See your doctor right away."})); // 11
-		d.add(new Diagnosis(this, new String[]{"IRRITATION OF THE AIRWAYS will cause coughing to attempt to clear the object or irritation out of the airway.","If the coughing is severe or if you don't believe the irritant has been cleared from your airway, see your doctor or go to the emergency room right away."})); // 12
+		d.add(new Diagnosis(title, new String[]{"foo"})); // 1
+		d.add(new Diagnosis(title, new String[]{"Your symptoms may be from a serious condition called PULMONARY EDEMA (fluid in the lungs).","EMERGENCY! GO TO THE NEAREST EMERGENCY ROOM RIGHT AWAY."})); // 2
+		d.add(new Diagnosis(title, new String[]{"You may have a viral illness such as a COLD or the FLU.","Get plenty of rest, and drink lots of fluids. Try over-the-counter medicines to treat your symptoms."})); // 3
+		d.add(new Diagnosis(title, new String[]{"You may have an infection of the airways such as CHRONIC BRONCHITIS. If you have a fever with shaking chills and are very ill, you may have a more serious infection such as PNEUMONIA.", "See your doctor. He or she can prescribe medicine to relieve your symptoms. Get plenty of rest, and drink lots of fluids. If you smoke, stop smoking."})); // 4
+		d.add(new Diagnosis(title, new String[]{"These symptoms may be a sign of ASTHMA, a constriction of the airways.","Asthma can be dangerous and should be diagnosed and treated by your doctor."})); // 5
+		d.add(new Diagnosis(title, new String[]{"foo"})); // 6
+		d.add(new Diagnosis(title, new String[]{"Persistent coughing can be caused by CONGESTIVE HEART FAILURE, especially when there is a buildup of fluid in the lungs.","See your doctor."})); // 7
+		d.add(new Diagnosis(title, new String[]{"foo"})); // 8
+		d.add(new Diagnosis(title, new String[]{"Bloody mucus with these symptoms may mean that a blood clot has moved from your leg to your lungs. This is called PULMONARY EMBOLISM."})); // 9
+		d.add(new Diagnosis(title, new String[]{"These symptoms may be caused by TUBERCULOSIS or another type of infection.","See your doctor."})); // 10
+		d.add(new Diagnosis(title, new String[]{"This may be a sign of a serious illness, such as LUNG CANCER. Other signs of lung cancer may include a cough that produces bloody sputum, shortness of breath and wheezing.","See your doctor right away."})); // 11
+		d.add(new Diagnosis(title, new String[]{"IRRITATION OF THE AIRWAYS will cause coughing to attempt to clear the object or irritation out of the airway.","If the coughing is severe or if you don't believe the irritant has been cleared from your airway, see your doctor or go to the emergency room right away."})); // 12
 
 		q.get(1).DefConn(q.get(12), q.get(2), "no");
 		q.get(2).DefConn(d.get(2), q.get(3), "no");
