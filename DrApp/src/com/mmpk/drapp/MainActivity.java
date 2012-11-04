@@ -25,16 +25,11 @@ public class MainActivity extends Activity {
     }
     
     public void iNeedAdviceClicked(View v) {
-<<<<<<< HEAD
-    	startActivity(new Intent(this, MainEmergency.class));
-//    	Log.i("mainActivity", "i need advice clicked");
-=======
-    	Log.i("mainActivity", "i need advice clicked");
-    	
+
     	Intent i = new Intent(this, BodyActivity.class);
 		
     	startActivity(i);
->>>>>>> 5cc19a4fad4d876dc147cd3c6cceccd4d9aff3f8
+
     }
     
     public void iNeedHelpClicked(View v) {

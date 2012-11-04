@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="15dip"
         android:gravity="center_horizontal"
-        android:text="What happend?"
+        android:text="What happened?"
         android:textColor="@color/white"
         android:textSize="45dp" />
 
