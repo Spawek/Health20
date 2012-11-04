@@ -1,5 +1,6 @@
 package com.mmpk.drapp;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -7,15 +8,12 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 
-public class MainActivity extends Activity {
+public class MainEmergency extends Activity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        
-        setTitle("DrApp");
-        
+        setContentView(R.layout.activity_emergency_main);
     }
 
     @Override
@@ -24,22 +22,17 @@ public class MainActivity extends Activity {
         return true;
     }
     
-    public void iNeedAdviceClicked(View v) {
-<<<<<<< HEAD
-    	startActivity(new Intent(this, MainEmergency.class));
+    public void iNeedCall(View v) {
+        Intent callIntent = new Intent(Intent.ACTION_CALL);
+        callIntent.setData(Uri.parse("tel:911"));
+        startActivity(callIntent);
+        
 //    	Log.i("mainActivity", "i need advice clicked");
-=======
-    	Log.i("mainActivity", "i need advice clicked");
-    	
-    	Intent i = new Intent(this, BodyActivity.class);
-		
-    	startActivity(i);
->>>>>>> 5cc19a4fad4d876dc147cd3c6cceccd4d9aff3f8
+//    	startActivity(new Intent(this, MainActivity.class));
     }
     
-    public void iNeedHelpClicked(View v) {
-    	
-    	startActivity(new Intent(this, MainEmergency.class));
+    public void iNeedTips(View v) {
 //    	Log.i("mainActivity", "emergency clicked");
+    	startActivity(new Intent(this, FirstAidTipps.class));
     }
 }

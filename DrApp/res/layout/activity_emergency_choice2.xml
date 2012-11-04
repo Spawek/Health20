@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip" >
+
+        <RadioButton
+            android:id="@+id/rb_adominal_pain"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Abdominal Pain"
+            android:onClick="onRadioButtonClick"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_allergic"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClick"
+            android:text="Allergic Reaction" />
+
+        <RadioButton
+            android:id="@+id/rb_animalbite"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClick"
+            android:text="Animal Bite" />
+
+        <RadioButton
+            android:id="@+id/rb_electricalburn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClick"
+            android:text="Blisters" />
+        <RadioButton
+            android:id="@+id/rb_electricalburn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClick"
+            android:text="Bruises" />
+        <RadioButton
+            android:id="@+id/rb_electricalburn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClick"
+            android:text="Choking" />
+        <RadioButton
+            android:id="@+id/rb_electricalburn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClick"
+            android:text="Cuts" />
+
+
+        <RadioButton
+            android:id="@+id/rb_other"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClick"
+            android:text="more..." />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bt_confirm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="30dp"
+        android:onClick="onNavButtonClick"
+        android:text="HELP ME!"
+        android:visibility="invisible"
+        />
+
+</LinearLayout>

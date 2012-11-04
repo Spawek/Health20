@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+        
+        
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:text="Your location: " 
+        />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:textColor="@color/red"
+        android:text="Luisenstraße 58/59 10117 Berlin, Deutschland" 
+        />
+
+    <TextView
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="Calling 911..."
+        android:textSize="40dp" />
+
+    <ImageView
+        android:id="@+id/emergency_call"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/editText1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="50dp"
+        android:layout_weight="0.15"
+        android:onClick="iNeedCall"
+        android:src="@drawable/callhelp" />
+
+    <Button
+        android:id="@+id/emergency_aid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="iNeedTipps"
+        android:text="FIRST AID TIPS" />
+
+</RelativeLayout>
