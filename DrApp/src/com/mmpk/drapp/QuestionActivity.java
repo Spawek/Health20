@@ -20,12 +20,14 @@ public class QuestionActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_question);
 		
-		answerController = (IQuestionController) savedInstanceState.get("c");
+		Intent i = getIntent();
+		
+		answerController = (Question) i.getSerializableExtra("controller");
 		titleTV = (TextView) findViewById(R.id.title);
 		questionTV = (TextView) findViewById(R.id.question);
 		
-		titleTV.setText(savedInstanceState.getString("title"));
-		questionTV.setText(savedInstanceState.getString("question"));
+		titleTV.setText(i.getStringExtra("title"));
+		questionTV.setText(i.getStringExtra("question"));
 		
 	}
 
@@ -43,24 +45,26 @@ public class QuestionActivity extends Activity {
 	}
 
 	private void processNextState(IState a) throws Exception {
-		Bundle data = new Bundle();
 		Intent i;
 		
 		if (a instanceof Diagnosis) {
-			data.putString("title", ((Diagnosis) a).title);
-			data.putStringArray("diagnosis", ((Diagnosis) a).paragraphs);
+			i = new Intent(this, DiagnosisActivity.class);
 			
-			i = new Intent("diagnosis_intent");
+			i.putExtra("title", ((Diagnosis) a).title);
+			i.putExtra("diagnosis", ((Diagnosis) a).paragraphs);
+			
+			
+			
 			
 		} else if (a instanceof Question) {
-			data.putString("title", ((Question) a).title);
-			data.putString("question", ((Question) a).question);
+			i = new Intent(this, QuestionActivity.class);
 			
-			i = new Intent("question_intent");
+			i.putExtra("title", ((Question) a).title);
+			i.putExtra("question", ((Question) a).question);
+			i.putExtra("controller", (Question) a);
+			
 		} else
 			throw new Exception("IState of unknown type");
-		
-		i.putExtras(data);
 		
 		startActivity(i);
 	}
@@ -68,12 +72,14 @@ public class QuestionActivity extends Activity {
 	public void noClicked(View v) throws Exception {
 		Log.i("activity_question", "no clicked");
 		IState a = answerController.postAnswer(IQuestionController.Answer.No);
+		
 		processNextState(a);
 	}
 
 	public void idkClicked(View v) throws Exception {
 		Log.i("activity_question", "idk clicked");
 		IState a = answerController.postAnswer(IQuestionController.Answer.Idk);
+		
 		processNextState(a);
 	}
 

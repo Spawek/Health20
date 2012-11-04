@@ -2,6 +2,7 @@ package com.mmpk.drapp;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -18,11 +19,16 @@ public class DiagnosisActivity extends Activity {
         setContentView(R.layout.activity_diagnosis);
         getActionBar().setDisplayHomeAsUpEnabled(true);
         
+        Intent i = getIntent();
+        
 		titleTV = (TextView) findViewById(R.id.title);
-		diagnosisTV = (TextView) findViewById(R.id.question);
+		diagnosisTV = (TextView) findViewById(R.id.content);
 		// TODO pierwszy akapit!
-		titleTV.setText(savedInstanceState.getString("title"));
-		diagnosisTV.setText(savedInstanceState.getStringArray("diagnosis")[0]);
+		titleTV.setText(i.getStringExtra("title"));
+		String s = "";
+		for (String is : i.getStringArrayExtra("diagnosis"))
+			s += is + "\n\n";
+		diagnosisTV.setText(s);
     }
 
     @Override

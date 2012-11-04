@@ -6,5 +6,7 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_question">QuestionActivity</string>
     <string name="title_activity_diagnosis">DiagnosisActivity</string>
+    <string name="title_activity_body_part">BodyPartActivity</string>
+    <string name="title_activity_category_choice">CategoryChoiceActivity</string>
 
 </resources>

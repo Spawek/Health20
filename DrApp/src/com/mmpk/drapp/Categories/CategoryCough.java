@@ -1,27 +1,29 @@
-package Categories;
-import MainPackage.Category;
-import MainPackage.Diagnosis;
-import MainPackage.Question;
+package com.mmpk.drapp.Categories;
+import java.io.Serializable;
+
+import com.mmpk.drapp.Category;
+import com.mmpk.drapp.Diagnosis;
+import com.mmpk.drapp.Question;
 
 public class CategoryCough extends Category {
 	public CategoryCough() throws Exception
 	{
 		title = "Cough";
-		q.add(new Question(this, "fake")); //0
-		q.add(new Question(this, "Has your cough begun recently?")); //1
-		q.add(new Question(this, "Are you very short of breath, and are you coughing up pink, frothy mucus?"));	//2
-		q.add(new Question(this, "Does your cough produce clear or pale yellow mucus?")); //3
-		q.add(new Question(this, "Does your cough produce yellow, tan or green mucus?")); //4
-		q.add(new Question(this, "Does the cough come with shortness of breath and wheezing?")); //5
-		q.add(new Question(this, "Do you have swelling in your legs and/or shortness of breath when you are active or after you have been lying down?")); //6
-		q.add(new Question(this, "Do you have heart problems?")); //7
-		q.add(new Question(this, "Have you recently started coughing up blood or bloody sputum?")); //8
-		q.add(new Question(this, "Have you recently started having sharp chest pain, rapid heartbeat, swelling of the legs and sudden shortness of breath?")); //9
-		q.add(new Question(this, "Do you have a fever, chills and night sweats along with chest pain when you cough or take a deep breath?")); //10
-		q.add(new Question(this, "Have you unintentionally lost weight?")); //11
-		q.add(new Question(this, "Did you inhale dust, particles or an object?")); //12
+		q.add(new Question(title, "fake")); //0
+		q.add(new Question(title, "Has your cough begun recently?")); //1
+		q.add(new Question(title, "Are you very short of breath, and are you coughing up pink, frothy mucus?"));	//2
+		q.add(new Question(title, "Does your cough produce clear or pale yellow mucus?")); //3
+		q.add(new Question(title, "Does your cough produce yellow, tan or green mucus?")); //4
+		q.add(new Question(title, "Does the cough come with shortness of breath and wheezing?")); //5
+		q.add(new Question(title, "Do you have swelling in your legs and/or shortness of breath when you are active or after you have been lying down?")); //6
+		q.add(new Question(title, "Do you have heart problems?")); //7
+		q.add(new Question(title, "Have you recently started coughing up blood or bloody sputum?")); //8
+		q.add(new Question(title, "Have you recently started having sharp chest pain, rapid heartbeat, swelling of the legs and sudden shortness of breath?")); //9
+		q.add(new Question(title, "Do you have a fever, chills and night sweats along with chest pain when you cough or take a deep breath?")); //10
+		q.add(new Question(title, "Have you unintentionally lost weight?")); //11
+		q.add(new Question(title, "Did you inhale dust, particles or an object?")); //12
 		
-		d.add(new Diagnosis(this, new String[]{"For more information, please talk to your doctor. If you think your problem is serious, call your doctor right away."}));
+		d.add(new Diagnosis(this, new String[]{"For more information, please talk to your doctor.", "If you think your problem is serious, call your doctor right away."}));
 		
 		d.add(new Diagnosis(this, new String[]{"foo"})); // 1
 		d.add(new Diagnosis(this, new String[]{"Your symptoms may be from a serious condition called PULMONARY EDEMA (fluid in the lungs).","EMERGENCY! GO TO THE NEAREST EMERGENCY ROOM RIGHT AWAY."})); // 2
