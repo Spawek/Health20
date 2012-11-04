@@ -1,7 +1,9 @@
-package Categories;
-import MainPackage.Category;
-import MainPackage.Diagnosis;
-import MainPackage.Question;
+package com.mmpk.drapp.Categories;
+import java.io.Serializable;
+
+import com.mmpk.drapp.Category;
+import com.mmpk.drapp.Diagnosis;
+import com.mmpk.drapp.Question;
 
 public class CategoryLegProblems extends Category {
 	public CategoryLegProblems() throws Exception
@@ -21,7 +23,7 @@ public class CategoryLegProblems extends Category {
 		q.add(new Question(title,"Do you have swelling in both of your feet or lower legs?"));
 
 
-		d.add(new Diagnosis(title, new String[]{"For more information, please talk to your doctor. If you think your problem is serious, call your doctor right away."}));\ 0 
+		d.add(new Diagnosis(title, new String[]{"For more information, please talk to your doctor. If you think your problem is serious, call your doctor right away."})); //0
 		
 		d.add(new Diagnosis(title, new String[]{"foo"})); // 1
 		d.add(new Diagnosis(title, new String[]{"You may have BROKEN BONE such as the TIBIA or FIBULA in the lower leg.","EMERGENCY See your doctor or go to the emergency room right away. Apply ice to the affected area."})); // 2
