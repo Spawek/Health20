@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
 
@@ -27,6 +28,7 @@ public class QuestionActivity extends Activity {
 		questionTV = (TextView) findViewById(R.id.question);
 		
 		setTitle(i.getStringExtra("title"));
+		
 		
 		titleTV.setText(i.getStringExtra("title"));
 		questionTV.setText(i.getStringExtra("question"));
