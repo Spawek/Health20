@@ -7,12 +7,12 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 
-public class MainActivity extends Activity {
+public class EmergencyMoreAid2 extends Activity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_emergency_choice3);
     }
 
     @Override
@@ -21,14 +21,11 @@ public class MainActivity extends Activity {
         return true;
     }
     
-    public void iNeedAdviceClicked(View v) {
-    	startActivity(new Intent(this, MainEmergency.class));
-//    	Log.i("mainActivity", "i need advice clicked");
+    public void onRadioButtonClick(View v) {
+    	startActivity(new Intent(this, FirstAidTipps.class));
     }
-    
-    public void iNeedHelpClicked(View v) {
-    	
-    	startActivity(new Intent(this, MainEmergency.class));
-//    	Log.i("mainActivity", "emergency clicked");
+//    
+    public void more(View v) {
+    	startActivity(new Intent(this, FirstAidTipps.class));
     }
 }

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dip"
+        android:gravity="center_horizontal"
+        android:text="What happend?"
+        android:textColor="@color/white"
+        android:textSize="45dp" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip" >
+
+        <RadioButton
+            android:id="@+id/rb_wounds"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Bleeding/Wounds"
+            android:onClick="onRadioButtonClick"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_burn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClick"
+            android:text="Heat Burn" />
+
+        <RadioButton
+            android:id="@+id/rb_gasburn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClick"
+            android:text="Chemical/Gas Burn" />
+
+        <RadioButton
+            android:id="@+id/rb_electricalburn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClick"
+            android:text="Electrical Burn" />
+
+
+        <RadioButton
+            android:id="@+id/rb_other"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="more"
+            android:text="MORE..." />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bt_confirm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="30dp"
+        android:onClick="onNavButtonClick"
+        android:text="HELP ME!"
+        android:visibility="invisible"
+        />
+
+</LinearLayout>

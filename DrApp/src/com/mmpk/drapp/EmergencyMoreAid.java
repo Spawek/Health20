@@ -6,13 +6,16 @@ import android.content.Intent;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Button;
 
-public class MainActivity extends Activity {
+public class EmergencyMoreAid extends Activity {
 
+	protected Button helpMe;
+	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_emergency_choice2);
     }
 
     @Override
@@ -21,14 +24,11 @@ public class MainActivity extends Activity {
         return true;
     }
     
-    public void iNeedAdviceClicked(View v) {
-    	startActivity(new Intent(this, MainEmergency.class));
-//    	Log.i("mainActivity", "i need advice clicked");
+    public void onRadioButtonClick(View v) {
+    	startActivity(new Intent(this, EmergencyBleeding.class));
     }
-    
-    public void iNeedHelpClicked(View v) {
-    	
-    	startActivity(new Intent(this, MainEmergency.class));
-//    	Log.i("mainActivity", "emergency clicked");
+//    
+    public void more(View v) {
+    	startActivity(new Intent(this, EmergencyMoreAid2.class));
     }
 }

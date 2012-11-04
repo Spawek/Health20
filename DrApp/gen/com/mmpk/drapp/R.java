@@ -23,41 +23,47 @@ public final class R {
         public static final int yellow=0x7f040004;
     }
     public static final class drawable {
-        public static final int callhelp=0x7f020000;
-        public static final int compass=0x7f020001;
-        public static final int emergencycall=0x7f020002;
-        public static final int helpphone=0x7f020003;
-        public static final int ic_action_search=0x7f020004;
-        public static final int ic_launcher=0x7f020005;
-        public static final int telephone=0x7f020006;
+        public static final int advice=0x7f020000;
+        public static final int bleed=0x7f020001;
+        public static final int bleeding=0x7f020002;
+        public static final int callhelp=0x7f020003;
+        public static final int compass=0x7f020004;
+        public static final int emergencycall=0x7f020005;
+        public static final int helpemergency=0x7f020006;
+        public static final int helpphone=0x7f020007;
+        public static final int ic_action_search=0x7f020008;
+        public static final int ic_launcher=0x7f020009;
+        public static final int telephone=0x7f02000a;
     }
     public static final class id {
-        public static final int bt_confirm=0x7f080009;
-        public static final int button1=0x7f080003;
-        public static final int editText1=0x7f08000f;
-        public static final int emergency=0x7f08000e;
-        public static final int emergencyCall=0x7f080002;
-        public static final int emergency_aid=0x7f080010;
-        public static final int icon=0x7f080001;
-        public static final int linearLayout1=0x7f080000;
-        public static final int menu_settings=0x7f080011;
-        public static final int needAdvice=0x7f08000d;
-        public static final int rb_adominal_pain=0x7f08000a;
-        public static final int rb_allergic=0x7f08000b;
-        public static final int rb_animalbite=0x7f08000c;
-        public static final int rb_burn=0x7f080005;
-        public static final int rb_electricalburn=0x7f080007;
-        public static final int rb_gasburn=0x7f080006;
-        public static final int rb_other=0x7f080008;
-        public static final int rb_wounds=0x7f080004;
+        public static final int bt_confirm=0x7f080008;
+        public static final int bt_tips=0x7f08000f;
+        public static final int editText1=0x7f080000;
+        public static final int emergencyCall=0x7f08000e;
+        public static final int emergency_aid=0x7f080002;
+        public static final int emergency_call=0x7f080001;
+        public static final int icon=0x7f08000d;
+        public static final int imageView1=0x7f080012;
+        public static final int linearLayout1=0x7f08000c;
+        public static final int menu_settings=0x7f080013;
+        public static final int pic_advice=0x7f080010;
+        public static final int pic_help=0x7f080011;
+        public static final int rb_adominal_pain=0x7f080009;
+        public static final int rb_allergic=0x7f08000a;
+        public static final int rb_animalbite=0x7f08000b;
+        public static final int rb_burn=0x7f080004;
+        public static final int rb_electricalburn=0x7f080006;
+        public static final int rb_gasburn=0x7f080005;
+        public static final int rb_other=0x7f080007;
+        public static final int rb_wounds=0x7f080003;
     }
     public static final class layout {
         public static final int activity_emergency_call=0x7f030000;
         public static final int activity_emergency_choice=0x7f030001;
         public static final int activity_emergency_choice2=0x7f030002;
         public static final int activity_emergency_choice3=0x7f030003;
-        public static final int activity_main=0x7f030004;
-        public static final int activity_main_emergency=0x7f030005;
+        public static final int activity_emergency_main=0x7f030004;
+        public static final int activity_main=0x7f030005;
         public static final int emergency_bleeding=0x7f030006;
     }
     public static final class menu {
