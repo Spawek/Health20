@@ -3,8 +3,10 @@ package com.mmpk.drapp;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 import android.support.v4.app.NavUtils;
 
@@ -48,4 +50,10 @@ public class DiagnosisActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
+    public void startAgainClicked(View v) {
+    	Log.i("diagnosis_activity", "start again clicked");
+    	Intent i = new Intent(this, MainActivity.class);
+    	i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+    	startActivity(i);
+    }
 }

@@ -2,6 +2,7 @@ package com.mmpk.drapp;
 
 import java.util.HashMap;
 import com.mmpk.drapp.Categories.*;
+
 import java.util.Map;
 
 public class DB {
@@ -12,6 +13,8 @@ public class DB {
 
 	public static void CreateCategories() throws Exception {
 		DB.categories.put("Cough", new CategoryCough()); // for every category
+		DB.categories.put("Sore throat", new CategoryThroatProblems());
+		DB.categories.put("Cold and flu", new CategoryColdAndFlu());
 	}
 
 	static {

@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/body" />
+
+    <Button
+        android:id="@+id/airways"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginTop="16dp"
+        android:text="Airways &amp; Ears" 
+        android:onClick="airwaysClicked"/>
+
+    <Button
+        android:id="@+id/general"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:text="General / Other" 
+        android:onClick="generalClicked"/>
+
+    <Button
+        android:id="@+id/chest"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/airways"
+        android:layout_centerHorizontal="true"
+        android:text="Chest" 
+        android:onClick="chestClicked"/>
+
+    <Button
+        android:id="@+id/abdomen"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Abdomen &amp; Pelvis" 
+        android:onClick="abdomenClicked"/>
+
+    <Button
+        android:id="@+id/legs"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:text="Legs" 
+        android:onClick="legsClicked"/>
+
+    <Button
+        android:id="@+id/head"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:text="Head &amp; Eyes" 
+        android:onClick="headClicked"/>
+
+    <Button
+        android:id="@+id/button2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/chest"
+        android:layout_alignBottom="@+id/chest"
+        android:layout_toLeftOf="@+id/general"
+        android:text="Arms" 
+        android:onClick="chestClicked"/>
+
+</RelativeLayout>

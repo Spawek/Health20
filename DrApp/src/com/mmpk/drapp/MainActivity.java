@@ -25,15 +25,9 @@ public class MainActivity extends Activity {
     public void iNeedAdviceClicked(View v) {
     	Log.i("mainActivity", "i need advice clicked");
     	
-    	Question init_q = DB.categories.get("Cough").q.get(1);
-    	
-    	Intent i = new Intent(this, QuestionActivity.class);
+    	Intent i = new Intent(this, BodyActivity.class);
 		
-    	i.putExtra("title", init_q.title);
-		i.putExtra("question", init_q.question);
-		i.putExtra("controller", init_q);
-		
-		startActivity(i);
+    	startActivity(i);
     }
     
     public void emergencyClicked(View v) {
