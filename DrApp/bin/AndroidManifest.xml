@@ -20,6 +20,47 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".QuestionActivity"
+            android:label="@string/title_activity_question" >
+            <intent-filter>
+                <action android:name="com.mmpk.drapp.QuestionActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DiagnosisActivity"
+            android:label="@string/title_activity_diagnosis" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mmpk.drapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".BodyPartActivity"
+            android:label="@string/title_activity_body_part" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CategoryChoiceActivity"
+            android:label="@string/title_activity_category_choice" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BodyActivity"
+            android:label="@string/title_activity_body" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
