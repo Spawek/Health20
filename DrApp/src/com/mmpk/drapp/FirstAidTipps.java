@@ -16,6 +16,7 @@ public class FirstAidTipps extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_emergency_choice);
+        
         helpMe = (Button) findViewById(R.id.bt_confirm);
     }
 

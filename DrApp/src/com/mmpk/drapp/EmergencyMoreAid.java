@@ -16,6 +16,9 @@ public class EmergencyMoreAid extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_emergency_choice2);
+        
+        helpMe = (Button) findViewById(R.id.bt_confirm);
+
     }
 
     @Override
@@ -26,6 +29,8 @@ public class EmergencyMoreAid extends Activity {
     
     public void onRadioButtonClick(View v) {
     	startActivity(new Intent(this, EmergencyBleeding.class));
+    	helpMe.setVisibility(0);
+
     }
 //    
     public void more(View v) {
